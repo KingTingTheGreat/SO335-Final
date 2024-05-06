@@ -1,11 +1,14 @@
+const dim = (i) => {
+	return 2 + i * 50;
+};
 // add circles to div id="white" with increasing size and decreasing opacity
 var white = document.getElementById("white");
-const numCircles = 50;
+const numCircles = 9;
 for (i = 0; i < numCircles; i++) {
 	var circle = document.createElement("div");
-	circle.style.width = 2 + i * 40 + "px";
-	circle.style.height = 2 + i * 40 + "px";
-	circle.style.opacity = 1 - i * 4 * (1 / numCircles);
+	circle.style.width = dim(i) + "px";
+	circle.style.height = dim(i) + "px";
+	circle.style.opacity = 1 - i * 0.1 - 0.1;
 	circle.style.borderRadius = "50%";
 	circle.style.backgroundColor = "rgba(255, 255, 255)";
 	circle.style.position = "absolute";
