@@ -17,5 +17,3 @@ for (i = 0; i < numCircles; i++) {
 	circle.style.transform = "translate(-50%, -50%)";
 	white.appendChild(circle);
 }
-// print number of elements in div id="white"
-console.log(white.children.length);
