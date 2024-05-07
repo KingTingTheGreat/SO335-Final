@@ -27,12 +27,24 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    .center {
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(rgb(255, 255, 255), rgb(255, 255, 255, 0));
+      /* border-radius: 50%; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
   </style>
 </head>
 
 <body>
   <div class="colors">
-    <div id="white"></div>
+    <div class="center"></div>
   </div>
   <script src="script.js"></script>
 </body>
